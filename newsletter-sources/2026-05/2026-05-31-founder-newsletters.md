@@ -52,7 +52,7 @@ A leaked internal memo reviewed by The Information shows Meta plans to begin tes
 source: Laura Bratton and Kevin McLaughlin · The Information (paywalled)
 date: May 2026
 url: https://www.theinformation.com/articles/forward-deployed-engineers-rage
-tag: Analysis
+tag: Tools
 
 The forward-deployed engineer role, a title Palantir popularized over a decade ago, is spreading across the industry as companies race to put AI to practical use. The piece notes Meta recently formed a new FDE organization to get more advertisers using its AI tools, and Google Cloud plans to hire hundreds of FDEs, making the role nearly as coveted as core AI research positions. (Summarized from the public preview.)
 
@@ -236,7 +236,7 @@ Rachitsky argues the freemium and pricing playbooks that worked for traditional 
 source: Hilary Gridley · Lenny's Newsletter
 date: May 2026
 url: https://www.lennysnewsletter.com/p/your-couch-to-5k-for-ai
-tag: Analysis
+tag: Tools
 
 A guest guide offering a step-by-step program for building a daily AI habit that sticks, aimed at readers who want to become fluent power users. It recommends incorporating AI tools into everyday work gradually rather than all at once, building competence incrementally like a running plan.
 
@@ -244,7 +244,7 @@ A guest guide offering a step-by-step program for building a daily AI habit that
 source: Lenny Rachitsky · Lenny's Newsletter
 date: May 2026
 url: https://www.lennysnewsletter.com/p/not-all-ai-agents-are-created-equal
-tag: Agents
+tag: Tools
 
 Rachitsky presents a framework for categorizing and prioritizing AI-agent initiatives, examining what separates the best agents from mediocre ones — the design choices, reliability, and evaluation practices that distinguish agents that deliver real value from those that disappoint in production.
 

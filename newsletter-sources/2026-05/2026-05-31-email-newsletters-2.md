@@ -1,4 +1,4 @@
-# Product, Fintech & Crypto Newsletters
+# Email Letters
 
 ## When Multiple Product Managers Own the Same Problem
 source: Substack / Amy C. Mitchell
@@ -44,7 +44,7 @@ Organizations that lead in AI are not defined by grand transformation strategies
 source: The SaaS CFO
 date: 2026-05-01
 url: https://www.thesaascfo.com/the-four-layers-of-ai-measurement-a-cfos-framework/
-tag: Product
+tag: Tools
 
 Measuring AI value purely through usage metrics misses the real picture. This framework proposes four layers: usage, work output, outcomes, and business impact.
 
@@ -52,7 +52,7 @@ Measuring AI value purely through usage metrics misses the real picture. This fr
 source: Substack / The Reality Drift
 date: 2026-05-01
 url: https://therealitydrift.substack.com/p/nothing-is-broken-so-why-does-everything-feel-wrong
-tag: Product
+tag: AI
 
 Systems and metrics can improve steadily while simultaneously drifting away from the real-world outcomes they were meant to track.
 
@@ -60,7 +60,7 @@ Systems and metrics can improve steadily while simultaneously drifting away from
 source: Substack / Elena Verna
 date: 2026-05-01
 url: https://www.elenaverna.com/p/whos-got-time-for-product-marketing
-tag: Product
+tag: Tools
 
 Product marketing is evolving from a dedicated function into an enabling system that helps all teams launch faster through shared tools, messaging frameworks, and customer data.
 
@@ -132,7 +132,7 @@ PMs should use AI agents to automate routine workflows rather than to replace pr
 source: Substack / Department of Product
 date: 2026-05-19
 url: https://departmentofproduct.substack.com/p/notions-new-workers-can-build-stripe
-tag: Agents
+tag: Tools
 
 AI is moving deeper into product workflows through tools like Notion Workers and agentic mobile features.
 
@@ -140,7 +140,7 @@ AI is moving deeper into product workflows through tools like Notion Workers and
 source: Substack / Metedata
 date: 2026-05-19
 url: https://metedata.substack.com/p/012-your-ai-frustration-is-my-opportunity
-tag: Product
+tag: Tools
 
 Widespread frustration with AI tools — hallucinations, shallow outputs, generic results — is not a reason to settle for "good enough." The last 10% of craft is where better tools, stronger judgment, and real product differentiation emerge.
 
@@ -180,7 +180,7 @@ As software becomes agent-native, the competitive advantage shifts from the UI l
 source: Substack / Elena Verna
 date: 2026-05-22
 url: https://www.elenaverna.com/p/youll-lose-your-job-in-2027
-tag: Product
+tag: AI
 
 The article makes a direct case that many current roles will look unrecognizable by 2027 due to AI-driven workflow automation.
 
@@ -188,7 +188,7 @@ The article makes a direct case that many current roles will look unrecognizable
 source: Substack / Ravi Mehta
 date: 2026-05-22
 url: https://blog.ravi-mehta.com/p/the-best-prototypes-get-thrown-away
-tag: Product
+tag: AI
 
 Prototypes should be built to answer a specific decision, then discarded once that learning is captured.
 
@@ -260,7 +260,7 @@ Andrej Karpathy's description of "agentic engineering" — where humans define p
 source: Substack / Benn Stancil
 date: 2026-05-26
 url: https://benn.substack.com/p/wac
-tag: AI
+tag: Tools
 
 AI benchmarks are becoming less useful as the real performance of AI products depends on context, tools, and how work is structured around the model.
 
@@ -292,7 +292,7 @@ Building an AI agent for customer success revealed that the gap between what cus
 source: ThreadReaderApp
 date: 2026-05-26
 url: https://threadreaderapp.com/thread/2058914803360600238.html
-tag: Agents
+tag: Tools
 
 The future of work will increasingly happen inside AI agents that use SaaS tools alongside humans, rather than humans using SaaS tools directly.
 
@@ -300,7 +300,7 @@ The future of work will increasingly happen inside AI agents that use SaaS tools
 source: Substack / Shreyas Doshi
 date: 2026-05-26
 url: https://shreyasdoshi.substack.com/p/on-blunt-feedback
-tag: Product
+tag: AI
 
 Blunt feedback is only constructive when it comes from someone who combines good intent with strong domain judgment.
 
@@ -324,7 +324,7 @@ The PM role is not disappearing but evolving differently depending on organizati
 source: Figma
 date: 2026-05-29
 url: https://www.figma.com/blog/4-new-ways-to-go-from-idea-to-product-with-ai-tools/
-tag: Product
+tag: Tools
 
 Figma outlines four concrete approaches teams are using to compress the journey from early idea to production-ready product using AI tools.
 
@@ -332,7 +332,7 @@ Figma outlines four concrete approaches teams are using to compress the journey 
 source: simonwillison.net
 date: 2026-05-29
 url: https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything
-tag: Agents
+tag: Tools
 
 Anthropic and OpenAI have achieved genuine product-market fit for enterprise coding and general-purpose agent tools, driven by real demand from engineering and product teams.
 
@@ -364,7 +364,7 @@ Long-term strategic goals are difficult to align teams around directly, so effec
 source: Slack Engineering
 date: 2026-05-29
 url: https://slack.engineering/slack-ai-the-path-to-multi-cloud/
-tag: Product
+tag: AI
 
 Slack describes its journey from self-managed AWS SageMaker infrastructure to Amazon Bedrock to address the scaling, latency, and operational overhead challenges that came with running AI features at Slack's scale.
 
@@ -372,7 +372,7 @@ Slack describes its journey from self-managed AWS SageMaker infrastructure to Am
 source: X / Joe Schmidt
 date: 2026-05-29
 url: https://x.com/joeschmidtiv/status/2059642470334677472
-tag: AI
+tag: Tools
 
 AI labs will absorb many horizontal AI tools, but startups can still compete and win in complex vertical workflows where generic models fall short.
 
@@ -476,7 +476,7 @@ Sage, a leader in accounting, financial, HR, and payroll technology for small an
 source: CNBC
 date: 2026-05-04
 url: https://www.cnbc.com/2026/05/01/legislative-action-could-increase-us-retirement-wealth.html
-tag: Product
+tag: AI
 
 A new federal initiative aims to expand retirement access by introducing government-backed individual accounts for millions of workers without employer-sponsored plans.
 
@@ -508,7 +508,7 @@ Fintech companies like Esusu and Flex are offering rent-splitting and short-term
 source: Finextra
 date: 2026-05-04
 url: https://www.finextra.com/pressarticle/109631/experian-and-snapchat-partner-for-financial-literacy-initiative
-tag: Product
+tag: AI
 
 Experian is embedding AI-driven financial education directly into Snapchat conversations through the platform's Sponsored Snaps format, aiming to reach younger users where they already spend time.
 
@@ -516,7 +516,7 @@ Experian is embedding AI-driven financial education directly into Snapchat conve
 source: Payments Dive
 date: 2026-05-18
 url: https://www.paymentsdive.com/news/bnpl-giants-battle-at-walmart/820252/
-tag: Product
+tag: AI
 
 Walmart switched its embedded buy now, pay later provider from Affirm to Klarna last year through OnePay, but both companies say they are still seeing strong volume from Walmart customers.
 
@@ -524,7 +524,7 @@ Walmart switched its embedded buy now, pay later provider from Affirm to Klarna 
 source: Bloomberg
 date: 2026-05-18
 url: https://www.bloomberg.com/news/articles/2026-05-15/openai-taps-plaid-to-bring-tailored-financial-advice-to-masses
-tag: Product
+tag: AI
 
 OpenAI is partnering with Plaid to let ChatGPT users connect read-only financial account data and receive more personalized guidance on budgeting, debt repayment, and financial planning.
 
@@ -604,7 +604,7 @@ Revolut is exploring a private banking unit in the UK and parts of Europe as it 
 source: American Banker
 date: 2026-05-18
 url: https://www.americanbanker.com/payments/news/fed-data-shows-cash-use-holding-steady
-tag: Product
+tag: AI
 
 New Federal Reserve data shows cash usage has stabilized after a steep decline between 2017 and 2020, with the average number of monthly cash transactions remaining largely flat since the pandemic.
 
@@ -724,7 +724,7 @@ A new executive order is pushing federal agencies to remove barriers that preven
 source: Finextra
 date: 2026-05-21
 url: https://www.finextra.com/newsarticle/47763/9-in-10-social-media-posts-by-finfluencers-are-low-quality---research
-tag: Product
+tag: AI
 
 A new study from Queen Mary University of London found that nearly 90% of financial influencer posts on Instagram, TikTok, and YouTube contain more negative than positive quality signals, with very few creators disclosing credentials, risks, or conflicts of interest.
 
@@ -788,7 +788,7 @@ Crypto brokerage Blockchain.com has confidentially filed for a US IPO, joining a
 source: Finextra
 date: 2026-05-25
 url: https://www.finextra.com/newsarticle/47792/ai-set-to-automate-up-to-50-of-tasks-in-most-financial-services-roles
-tag: Product
+tag: AI
 
 A UK government-commissioned report warns that AI could automate 30% to 50% of tasks across most financial services jobs, reshaping workforce planning and required skill sets over the next decade.
 
@@ -804,7 +804,7 @@ The new AI enterprise services firm backed by Anthropic, Blackstone, Hellman & F
 source: Databricks
 date: 2026-05-25
 url: https://www.databricks.com/blog/how-databricks-genie-democratizes-data-access-financial-services
-tag: Product
+tag: AI
 
 Databricks Genie gives financial services business users a natural language interface to query governed enterprise data without relying on analysts or writing SQL.
 
@@ -1036,7 +1036,7 @@ Stablecoins processed $46T in transactions in 2025, and the GENIUS Act formalize
 source: X / @0xxbeacon
 date: 2026-05-04
 url: https://x.com/0xxbeacon/status/2050169199780069422
-tag: Product
+tag: AI
 
 On MegaETH's TGE day, leading DEX Kumbaya charged 1% fees on its MEGA/USDM pool and retained 50% for itself, versus the industry-standard 15-25% fee capture.
 
@@ -1140,7 +1140,7 @@ Fundstrat's Tom Lee attributes Ethereum's recent selling pressure primarily to r
 source: Thread Reader / X
 date: 2026-05-19
 url: https://threadreaderapp.com/thread/2056034648946315707.html
-tag: Product
+tag: AI
 
 A credibly neutral base chain does not make the apps built on it credibly neutral — real neutrality must hold across order flow, transaction landing, frontends, oracles, liquidations, listings, governance, and jurisdiction.
 
@@ -1156,7 +1156,7 @@ Tokenized stocks have reached a $1.5B onchain market cap, a roughly 40x increase
 source: Thread Reader / X
 date: 2026-05-19
 url: https://threadreaderapp.com/thread/2056084052315349280.html
-tag: Product
+tag: AI
 
 The programmable wallet is positioned as too powerful a primitive not to eventually displace legacy financial infrastructure as the primary organizing layer for financial services.
 
@@ -1300,7 +1300,7 @@ Japan's LDP has formally proposed that the FSA build a five-year onchain finance
 source: The Block
 date: 2026-05-21
 url: https://www.theblock.co/post/401934/bitwise-calls-hype-a-gen-2-crypto-token-says-its-undervalued
-tag: Product
+tag: AI
 
 Bitwise listed the Spot Hyperliquid ETF (ticker: BHYP) on NYSE, the first US spot Hyperliquid ETP to include in-house staking, with a 0.34% sponsor fee waived for the first month on the initial $500M in assets.
 
@@ -1452,7 +1452,7 @@ Bitcoin ETF markets stayed under pressure as bitcoin funds extended a losing str
 source: Thread Reader / X
 date: 2026-05-22
 url: https://threadreaderapp.com/thread/2056706527147573582.html
-tag: Product
+tag: AI
 
 Axis published its first public tear sheet reporting 18.2% net APY and $32.5M TVL after six weeks of private beta.
 
@@ -1460,7 +1460,7 @@ Axis published its first public tear sheet reporting 18.2% net APY and $32.5M TV
 source: CoinDesk
 date: 2026-05-22
 url: https://www.coindesk.com/policy/2026/05/20/eu-opens-mica-consultation-to-review-if-crypto-framework-is-still-fit-for-purpose
-tag: Strategy
+tag: Tools
 
 The European Commission opened a public consultation on MiCA, running through August 31, to assess whether the framework remains fit for purpose as digital asset markets evolve.
 
@@ -1588,7 +1588,7 @@ Vitalik Buterin has outlined a strategic repositioning of the Ethereum Foundatio
 source: Thread Reader / X
 date: 2026-05-26
 url: https://threadreaderapp.com/thread/2057473635322143153.html
-tag: Product
+tag: AI
 
 Berachain's PoL v2 resolves a structural disconnect in v1 by routing one-third of all future PoL emissions into a new BERA Yield Module, where any holder can stake BERA to earn rewards while contributing to network security and liquidity depth.
 
@@ -1708,7 +1708,7 @@ The US repo market reached $11.9 trillion in 2024, with roughly 38% in the non-c
 source: Thread Reader / X
 date: 2026-05-27
 url: https://threadreaderapp.com/thread/2059054473775894797.html
-tag: Product
+tag: AI
 
 Nathan Allman, founder of Ondo Finance, died unexpectedly, the protocol announced on May 25.
 
@@ -1940,6 +1940,6 @@ An analysis of all new Polymarket wallets from April 2025 to April 2026 finds th
 source: X / @0xJeff
 date: 2026-05-29
 url: https://x.com/0xJeff/status/2059621018633977908
-tag: Product
+tag: AI
 
 As AI value concentrates in private frontier labs through multi-year enterprise contracts and subsidized consumer lock-in, decentralized and onchain AI protocols represent the only liquid vehicle for asymmetric exposure to the commodity TAM.

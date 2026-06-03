@@ -12,7 +12,7 @@ Premium PRO edition compiling the week's earnings-snapshot visuals for subscribe
 source: Bertrand · App Economy Insights
 date: 2026-05-29
 url: https://www.appeconomyinsights.com/p/snowflake-ai-consumption-wins
-tag: Earnings
+tag: Funding
 
 Contrasts two enterprise-software earnings reports on the same evening: Snowflake surged 38% after hours while Salesforce kept sliding. The piece argues AI is splitting software into consumption businesses that earn more as usage rises and seat-based SaaS models that may erode. Snowflake's product revenue grew 34% to $1.33B, raised guidance, signed a $6B AWS deal, and acquired Natoma to govern agentic workflows. Salesforce's Agentforce ARR hit $1.2B but organic growth was only about 9%.
 
@@ -20,7 +20,7 @@ Contrasts two enterprise-software earnings reports on the same evening: Snowflak
 source: Bertrand · App Economy Insights (paywalled)
 date: 2026-05-26
 url: https://www.appeconomyinsights.com/p/how-spacex-makes-money
-tag: Earnings
+tag: Funding
 
 Breaks down SpaceX's 300-plus page S-1 filing ahead of what could be the largest IPO ever, targeting a $1.5–2T valuation and up to $75B raised. Financials are retroactively consolidated to include xAI, Grok, and X after the February 2026 merger. The framework: Starlink generates cash, reusable rockets bend the cost curve, and AI plus Mars are the moonshots. FY25 revenue was $18.7B (up 33%) against $20.7B in CapEx, so the company still spends more than it earns. Detailed segment analysis is paywalled.
 
@@ -36,7 +36,7 @@ Premium PRO edition with the week's earnings-snapshot visuals. Companies covered
 source: Bertrand · App Economy Insights
 date: 2026-05-22
 url: https://www.appeconomyinsights.com/p/nvidia-gone-parabolic
-tag: Earnings
+tag: Crypto
 
 Recaps NVIDIA's Q1 FY27, where CEO Jensen Huang said "demand has gone parabolic" as agentic AI turns token generation into revenue. Revenue rose 85% Y/Y to $81.6B with Data Center up 92% to $75.2B and gross margin at 75%; free cash flow nearly doubled to $48.6B. Guidance of $91B implies about 95% Y/Y growth. The piece highlights the new Vera CPU opportunity ($200B TAM), China as upside optionality, and the shift toward inference and "AI factories."
 
@@ -44,7 +44,7 @@ Recaps NVIDIA's Q1 FY27, where CEO Jensen Huang said "demand has gone parabolic"
 source: Bertrand · App Economy Insights (paywalled)
 date: 2026-05-19
 url: https://www.appeconomyinsights.com/p/wall-streets-top-stocks-in-q1-379
-tag: Earnings
+tag: Agents
 
 Reviews the latest 13F filings covering January–March 2026 trades by top hedge funds. The thesis: the AI trade moved down the stack into semis, power, and physical infrastructure while software faced a sharp sentiment reset over agent threats to SaaS. Amazon remained the most widely held name, followed by TSMC and Alphabet, with Apple and Tesla notably absent. The piece warns against blindly copying hedge fund trades; detailed top-buy lists are paywalled.
 
@@ -60,7 +60,7 @@ Premium PRO edition compiling the week's earnings visuals. Companies covered inc
 source: Bertrand · App Economy Insights
 date: 2026-05-15
 url: https://www.appeconomyinsights.com/p/alibaba-the-ai-trade-off
-tag: Earnings
+tag: Funding
 
 Examines how Alibaba and Sea Limited both missed profit expectations yet rallied as investors rewarded reinvestment. Alibaba's revenue grew just 3% to $35.3B and adjusted EBITA fell 84%, posting its first operating loss in five years, but the stock jumped 8% on Cloud Intelligence's 38% growth and AI commercialization via Qwen. Sea grew revenue 47% to $7.1B while reinvesting in Shopee logistics, Monee lending, and Garena. Both chose moat-building over near-term margins.
 
@@ -68,7 +68,7 @@ Examines how Alibaba and Sea Limited both missed profit expectations yet rallied
 source: Bertrand · App Economy Insights (paywalled)
 date: 2026-05-12
 url: https://www.appeconomyinsights.com/p/the-ai-tax-on-gaming
-tag: Earnings
+tag: Hardware
 
 Argues the market punishes gaming giants Sony and Nintendo for lacking a grand AI story while rewarding hyperscalers for huge CapEx. Both face an AI-driven memory crunch and are raising console prices to defend margins. Sony posted its most profitable year ever (FY25 revenue ¥12.48T) but a messy March quarter with a Bungie impairment; PS5 sales fell to a record-low 1.5M units as software and services carry more weight. Nintendo's deeper analysis is paywalled.
 
@@ -76,7 +76,7 @@ Argues the market punishes gaming giants Sony and Nintendo for lacking a grand A
 source: Bertrand · App Economy Insights (paywalled)
 date: 2026-05-09
 url: https://www.appeconomyinsights.com/p/pro-this-week-in-visuals-448
-tag: Earnings
+tag: Fintech
 
 Premium PRO edition visualizing nearly 50 earnings reports from a heavy week. Companies include AMD, Arm, Arista, McDonald's, Shopify, AppLovin, Uber, Novo Nordisk, Pfizer, Marriott, Cloudflare, MercadoLibre, Airbnb, DoorDash, CoreWeave, Ferrari, Fortinet, Coinbase, Datadog, PayPal, Block, Live Nation, Coupang, Fiserv, Axon, Reddit, Expedia, Twilio, Kraft Heinz, Affirm, Global Payments, Flutter, and Toast. Charts are paid-subscriber only.
 
@@ -84,7 +84,7 @@ Premium PRO edition visualizing nearly 50 earnings reports from a heavy week. Co
 source: Bertrand · App Economy Insights
 date: 2026-05-08
 url: https://www.appeconomyinsights.com/p/live-sports-steal-the-show
-tag: Earnings
+tag: Funding
 
 Reviews Q1 media earnings where live sports reshaped results but raised the rights bill. Comcast's "Legendary February" (Olympics, Super Bowl, NBA All-Star) added over $2B in revenue yet Media EBITDA swung to a $426M loss as NBA rights hit the P&L. Disney posted its first double-digit DTC margin with streaming profit up 88%. The piece also covers Warner Bros (awaiting the Paramount deal), Paramount, and Roku, which acts as a "toll booth" on connected-TV ad dollars.
 
@@ -92,7 +92,7 @@ Reviews Q1 media earnings where live sports reshaped results but raised the righ
 source: Bertrand · App Economy Insights (paywalled)
 date: 2026-05-05
 url: https://www.appeconomyinsights.com/p/palantir-tokens-are-the-new-coal
-tag: Earnings
+tag: Crypto
 
 Frames Palantir's quarter around CTO Shyam Sankar's line that tokens are the new coal and AIP is the train. As inference costs collapse (roughly 1,000x cheaper than three years ago), demand for governed agent workflows expands per Jevons paradox. Q1 revenue grew 85% to $1.63B, the fastest in company history, with net dollar retention at 150% and a Rule of 40 score of 145. US revenue surged 104% and now makes up 79% of the total. Coverage of Duolingo, Grab, and Pinterest is paywalled.
 
@@ -100,7 +100,7 @@ Frames Palantir's quarter around CTO Shyam Sankar's line that tokens are the new
 source: Bertrand · App Economy Insights (paywalled)
 date: 2026-05-03
 url: https://www.appeconomyinsights.com/p/earnings-visuals-42026
-tag: Earnings
+tag: Fintech
 
 A downloadable premium report compiling all of April's key earnings visuals in one place, spanning 70-plus companies. Coverage includes mega-caps (Apple, Alphabet, Microsoft, Amazon, Meta, Tesla), pharma, healthcare, semis, banks, software, payments, airlines, telecom, and restaurants. Each company gets a concise snapshot of revenue trends, margins, and takeaways. The full report download is gated behind the paid subscription.
 
@@ -108,7 +108,7 @@ A downloadable premium report compiling all of April's key earnings visuals in o
 source: Bertrand · App Economy Insights (paywalled)
 date: 2026-05-02
 url: https://www.appeconomyinsights.com/p/pro-this-week-in-visuals-c52
-tag: Earnings
+tag: Hardware
 
 Premium PRO edition covering a major mega-cap earnings week. Companies visualized include Apple, Microsoft, Meta, Samsung, Eli Lilly, Visa, Mastercard, AbbVie, Coca-Cola, AstraZeneca, Merck, KLA, T-Mobile, Verizon, Amgen, Airbus, Qualcomm, SanDisk, Booking, Spotify, Cadence, UPS, Hilton, Robinhood, Mondelez, GM, Ford, Chipotle, Roblox, SoFi, Atlassian, Rivian, and Align. Visuals are paid-subscriber only.
 
@@ -116,6 +116,6 @@ Premium PRO edition covering a major mega-cap earnings week. Companies visualize
 source: Bertrand · App Economy Insights
 date: 2026-05-01
 url: https://www.appeconomyinsights.com/p/amazon-the-inference-era
-tag: Earnings
+tag: Hardware
 
 Details how AWS is building the stack for agentic AI after Amazon's $200B CapEx commitment. Q1 FY26 revenue rose 17% to $181.5B; AWS accelerated to 28% growth ($37.6B), its fastest in 15 quarters, while the custom-silicon business (Graviton, Trainium, Nitro) topped a $20B run rate. OpenAI's models and Codex are landing on Bedrock alongside managed agents. Free cash flow collapsed to about $1B as CapEx hit $147B, but management bets the infrastructure monetizes for decades.

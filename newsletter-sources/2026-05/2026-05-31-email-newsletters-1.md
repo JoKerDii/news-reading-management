@@ -1,4 +1,4 @@
-# AI Newsletters
+# Email Letters
 
 ## Claude Security is now in public beta
 source: Anthropic
@@ -60,7 +60,7 @@ GPT-5.5 nearly halves runtime on SpatialBench relative to GPT-5.4 but shows no a
 source: arXiv
 date: 2026-05-01
 url: https://arxiv.org/abs/2604.26752
-tag: AI
+tag: Tools
 
 GLM-5V-Turbo integrates multimodal perception directly into reasoning and tool use within a unified architecture.
 
@@ -68,7 +68,7 @@ GLM-5V-Turbo integrates multimodal perception directly into reasoning and tool u
 source: Alibaba / Qwen
 date: 2026-05-01
 url: https://qwen.ai/blog?id=qwen-scope
-tag: AI
+tag: Tools
 
 Qwen-Scope is an interpretability toolkit trained on the Qwen3 and Qwen3.5 model series that sheds light on internal mechanisms underlying the models' behavior.
 
@@ -76,7 +76,7 @@ Qwen-Scope is an interpretability toolkit trained on the Qwen3 and Qwen3.5 model
 source: AWS
 date: 2026-05-01
 url: https://aws.amazon.com/about-aws/whats-new/2026/04/announcing-neuron-agentic-development/
-tag: Agents
+tag: Tools
 
 AWS released Neuron Agentic Development, an open-source collection of agent skills for AI coding assistants to accelerate development on AWS Trainium and Inferentia.
 
@@ -116,7 +116,7 @@ Cursor continuously updates its agent harness to improve model performance using
 source: X / Thread
 date: 2026-05-01
 url: https://threadreaderapp.com/thread/2049887685083566359.html
-tag: AI
+tag: Tools
 
 Silico is a platform for building AI models that gives researchers and engineers visibility into model internals, the ability to debug failures, and tools for intentional model design from the ground up rather than treating models as black boxes.
 
@@ -148,7 +148,7 @@ Anthropic appears to have started a fresh round of red teaming on an internal bu
 source: Testing Catalog
 date: 2026-05-04
 url: https://www.testingcatalog.com/google-is-testing-new-omni-model-for-video-generation-ahead-of-i-o/
-tag: AI
+tag: Tools
 
 Google is testing a new Omni model for video generation that may unify its video and image-generation tools under a single product name.
 
@@ -172,7 +172,7 @@ This paper presents a scalable method for generating realistic virtual computer 
 source: Intel / GitHub
 date: 2026-05-04
 url: https://github.com/intel/auto-round
-tag: AI
+tag: Tools
 
 AutoRound is an advanced quantization toolkit for large language models and vision-language models that achieves high accuracy at ultra-low bit widths with minimal tuning.
 
@@ -276,7 +276,7 @@ This analysis examines the ongoing GPU resource war among AI labs, investigating
 source: X / @PatrickToulme
 date: 2026-05-18
 url: https://x.com/PatrickToulme/status/2055709800986780028
-tag: Hardware
+tag: Tools
 
 AI kernel portability is argued to be structurally impossible because each major hardware platform — TPU's Pallas, NVIDIA's CuTile, AWS's NKI, AMD's FlyDSL, and Tenstorrent's tt-Metalium — exposes hardware-specific concepts that no universal DSL can unify.
 
@@ -508,7 +508,7 @@ OpenAI's Guaranteed Capacity offering allows customers to secure long-term acces
 source: Google
 date: 2026-05-20
 url: https://blog.google/innovation-and-ai/sundar-pichai-io-2026/
-tag: Agents
+tag: Tools
 
 At I/O 2026, Google outlined how Gemini models are being integrated across consumer products, creative tools, and developer platforms.
 
@@ -532,7 +532,7 @@ HTML's richness allows it to convey complex information more effectively than Ma
 source: NVIDIA / GitHub
 date: 2026-05-20
 url: https://github.com/NVlabs/LongLive
-tag: AI
+tag: Tools
 
 NVIDIA's LongLive 1.0 is a framework for interactive long-form video generation supporting sequential prompting and real-time user-guided editing through streaming attention and KV-cache optimization.
 
@@ -620,7 +620,7 @@ Anthropic has agreed to pay SpaceX nearly $45 billion over three years for compu
 source: X / @athleticKoder
 date: 2026-05-21
 url: https://x.com/athleticKoder/status/2057091692235481560
-tag: Agents
+tag: Tools
 
 This post strips away framework abstractions to show that every agent-training system reduces to the same loop: prompt to model action to environment to reward to gradient update.
 
@@ -652,7 +652,7 @@ Lance is a 3B multimodal model from ByteDance capable of image and video underst
 source: Meta AI / GitHub
 date: 2026-05-21
 url: https://github.com/facebookresearch/WavFlow
-tag: AI
+tag: Tools
 
 WavFlow is a flow-matching framework from Meta AI that generates synchronized audio from video and text inputs directly in raw waveform space, bypassing latent audio compression.
 
@@ -820,7 +820,7 @@ Anthropic's yet-unnamed consulting venture has made its first acquisition, picki
 source: State of AI
 date: 2026-05-22
 url: https://2026.stateofai.dev/en-US
-tag: AI
+tag: Tools
 
 The 2026 State of Web Dev AI report studies the impact of AI on developer work and the world at large, providing survey-based insights into how developers are adopting AI tools and how AI is reshaping software engineering practices.
 
@@ -828,7 +828,7 @@ The 2026 State of Web Dev AI report studies the impact of AI on developer work a
 source: Windows Central
 date: 2026-05-22
 url: https://www.windowscentral.com/microsoft/microsoft-cancels-claude-code-licenses-shifting-developers-to-github-copilot-cli-a-move-likely-driven-by-financial-motives
-tag: AI
+tag: Tools
 
 Microsoft has canceled Claude Code licenses for its developers, redirecting them to GitHub Copilot CLI.
 
@@ -836,7 +836,7 @@ Microsoft has canceled Claude Code licenses for its developers, redirecting them
 source: xAI
 date: 2026-05-26
 url: https://x.ai/news/grok-build-cli
-tag: Agents
+tag: Tools
 
 Grok Build is a new coding agent and CLI that has launched in beta for SuperGrok and X Premium Plus subscribers.
 
@@ -868,7 +868,7 @@ Zvi judges Gemini 3.5 Flash to be the best model at its speed point but unconvin
 source: GitHub / Anomaly Co
 date: 2026-05-26
 url: https://github.com/anomalyco/models.dev
-tag: AI
+tag: Tools
 
 Models.dev consolidates specifications and pricing information for a wide range of AI models into a single resource accessible via an API.
 
@@ -908,7 +908,7 @@ This analysis argues that DeepSeek's strategic aim is to enable a $10 trillion C
 source: Mashable
 date: 2026-05-26
 url: https://in.mashable.com/tech/110086/apples-genmoji-and-image-playground-set-for-major-visual-overhaul-in-ios-27-ahead-of-wwdc-2026
-tag: AI
+tag: Tools
 
 Apple plans to significantly upgrade its AI image tools Genmoji and Image Playground in iOS 27, enhancing visual quality and realism ahead of WWDC 2026.
 
@@ -956,7 +956,7 @@ xAI's top lawyer warned employees to carefully limit interactions with Cursor st
 source: NVIDIA
 date: 2026-05-27
 url: https://developer.nvidia.com/blog/extract-more-kernel-performance-with-nvidia-compileiq-auto-tuning/
-tag: Hardware
+tag: Tools
 
 NVIDIA's CompileIQ, integrated into CUDA 13.3, uses AI-driven evolutionary algorithms to auto-tune GPU compiler settings beyond standard heuristics for specific workloads.
 
@@ -1020,7 +1020,7 @@ Harvey baselined frontier models on its Legal Agent Benchmark holdout using an "
 source: Testing Catalog
 date: 2026-05-27
 url: https://www.testingcatalog.com/anthropic-to-introduce-personal-ai-fluency-scorecard-in-claude/
-tag: AI
+tag: Tools
 
 Anthropic plans to introduce an AI Fluency scorecard in Claude that evaluates user interaction skills across 11 behavioral indicators, giving users insight into their proficiency with the tool.
 
@@ -1060,7 +1060,7 @@ Biohub made its open discovery engine for protein structure prediction, design, 
 source: Simon Willison
 date: 2026-05-28
 url: https://simonwillison.net/2026/May/27/product-market-fit/#atom-everything
-tag: Agents
+tag: Tools
 
 Both Anthropic and OpenAI have begun aggressively raising API prices, likely because they have found product-market fit with coding and general-purpose agent products where companies spend over $200 per user per month.
 
@@ -1084,7 +1084,7 @@ Delta Weight Sync reduces the weight synchronization payload in async RL by tran
 source: OpenAI
 date: 2026-05-28
 url: https://developers.openai.com/api/docs/guides/secure-mcp-tunnels
-tag: Product
+tag: Tools
 
 Secure MCP Tunnel enables connecting private MCP servers to OpenAI products without exposing them to the public internet, using a tunnel-client to establish outbound HTTPS paths for request handling.
 
@@ -1092,7 +1092,7 @@ Secure MCP Tunnel enables connecting private MCP servers to OpenAI products with
 source: X / Thread
 date: 2026-05-28
 url: https://threadreaderapp.com/thread/2059675872408260816.html
-tag: AI
+tag: Tools
 
 LiteParse is a standalone open-source PDF parsing tool providing high-quality spatial text parsing with bounding boxes, operating without proprietary LLM features or cloud dependencies.
 
@@ -1108,7 +1108,7 @@ NVIDIA's LocateAnything is a vision-language grounding framework that decodes bo
 source: Callstack
 date: 2026-05-28
 url: https://www.callstack.com/blog/introducing-apex-a-fast-specialized-model-for-react-native
-tag: AI
+tag: Tools
 
 Apex is a React Native coding model trained to build apps by analyzing architecture decisions, fixing framework-specific issues, and reasoning about constraints.
 
@@ -1300,7 +1300,7 @@ ByteDance has approached external partners to help design a new chip to better s
 source: OpenAI
 date: 2026-05-29
 url: https://openai.com/index/openai-frontier-governance-framework/
-tag: AI
+tag: Tools
 
 OpenAI released a governance framework describing how its safety and security practices align with emerging regulations, covering risk management, model reporting, incident response, and oversight for advanced AI systems.
 
@@ -1324,7 +1324,7 @@ Mistral AI plans to design custom chips to control its infrastructure and lower 
 source: AlphaSignal
 date: 2026-05-01
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=9b970be617365f&lid=rhswQaVBZl31KG04&mid=1ea798-2c6a-4476-9263-af307665dad9
-tag: Hardware
+tag: Tools
 
 agentmemory (11.6k GitHub stars, Apache-2.0) runs silently in the background, records what your AI coding agent does each session, compresses it with AI, and injects the right context at the start of the next session.
 
@@ -1340,7 +1340,7 @@ A community repository of 106 slash-command "skills" for Claude Code spanning en
 source: AlphaSignal
 date: 2026-05-01
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=9b970be617365f&lid=1uuNuu3noBnX6fTtt&mid=1ea798-2c6a-4476-9263-af307665dad9
-tag: AI
+tag: Tools
 
 Sana is a fully open-source image and video generation framework that generates a 1024px image in 0.1 seconds on H100 or 0.3s on an RTX 4090, using one-step generation.
 
@@ -1348,7 +1348,7 @@ Sana is a fully open-source image and video generation framework that generates 
 source: AlphaSignal
 date: 2026-05-01
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=9b970be617365f&lid=1rS1DRcU2j3bSYlP0&mid=1ea798-2c6a-4476-9263-af307665dad9
-tag: Agents
+tag: Tools
 
 A new open-source tool converts any existing software application into a CLI interface that AI agents can call directly, removing the need for custom API integrations.
 
@@ -1371,7 +1371,7 @@ A Sunday Deep Dive by Ben Dickson arguing that single-agent systems should be th
 source: AlphaSignal
 date: 2026-05-04
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=ba53fe6b50c47f&lid=XojuxRR9NUy2sQSw&mid=aeea51-3f4e-4cc0-a98c-d7c974caacee
-tag: Agents
+tag: Tools
 
 Claude Security hit public beta, bringing AI-powered vulnerability scanning to codebases without requiring API integration or custom agent builds.
 
@@ -1379,7 +1379,7 @@ Claude Security hit public beta, bringing AI-powered vulnerability scanning to c
 source: AlphaSignal
 date: 2026-05-04
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=ba53fe6b50c47f&lid=K9m5CfM3x8rftrdU&mid=aeea51-3f4e-4cc0-a98c-d7c974caacee
-tag: Agents
+tag: Tools
 
 Cursor open-sourced its agent SDK (npm install @cursor/sdk), giving external developers access to the same agent engine that powers Cursor's IDE.
 
@@ -1387,7 +1387,7 @@ Cursor open-sourced its agent SDK (npm install @cursor/sdk), giving external dev
 source: AlphaSignal
 date: 2026-05-04
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=ba53fe6b50c47f&lid=kxXn0iASLI9uJBeF&mid=aeea51-3f4e-4cc0-a98c-d7c974caacee
-tag: Agents
+tag: Tools
 
 Hermes, an open-source AI agent by Nous Research, gained the ability to control ComfyUI — the node-based image, video, and audio generation tool — via plain-English instructions, with parameter injection via REST and WebSocket.
 
@@ -1411,7 +1411,7 @@ KAME is a new tandem voice architecture that begins speaking before it finishes 
 source: AlphaSignal
 date: 2026-05-18
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=T16d56d3ce6c334&lid=1vh1VSwGS82x0LB7W&mid=p2595cb-fc79-4895-a202-929c9eb8ca9d
-tag: AI
+tag: Tools
 
 xAI opened voice cloning on its TTS API, letting developers record about a minute of natural speech in the xAI console to produce a production-ready voice model in under two minutes.
 
@@ -1435,7 +1435,7 @@ TALOS-V2 compiles an entire transformer inference path — embeddings, attention
 source: AlphaSignal
 date: 2026-05-18
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=T16d56d3ce6c334&lid=L4B2q8b0OjXE3X0N&mid=p2595cb-fc79-4895-a202-929c9eb8ca9d
-tag: AI
+tag: Tools
 
 Scrapling is an open-source Python web scraping library that bypasses Cloudflare and other anti-bot protections while running 784x faster than BeautifulSoup.
 
@@ -1451,7 +1451,7 @@ Marvin is a fully autonomous AI agent from Iluvatar Labs designed to conduct cro
 source: AlphaSignal
 date: 2026-05-18
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=T16d56d3ce6c334&lid=1njrcRxWKdWgvESEK&mid=p2595cb-fc79-4895-a202-929c9eb8ca9d
-tag: AI
+tag: Tools
 
 A new open-source deep research tool achieves 95% accuracy on research benchmarks while running entirely locally, with no cloud dependencies.
 
@@ -1491,7 +1491,7 @@ Anthropic doubled output token limits across all Claude plans, with Tier 1 seein
 source: AlphaSignal
 date: 2026-05-19
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=ba53fe6b50c47f&lid=Gz8fhzSCo6JKD0FY&mid=aeea51-3f4e-4cc0-a98c-d7c974caacee
-tag: Agents
+tag: Tools
 
 Hermes v0.14.0 focuses on fundamentals: a new proxy layer turns any OAuth-authenticated provider (Claude Pro, ChatGPT Pro, SuperGrok) into a local API endpoint accessible to Codex, Aider, Cline, and Continue — no extra API key costs.
 
@@ -1499,7 +1499,7 @@ Hermes v0.14.0 focuses on fundamentals: a new proxy layer turns any OAuth-authen
 source: AlphaSignal
 date: 2026-05-19
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=ba53fe6b50c47f&lid=mcaPkvWex662Hldw&mid=aeea51-3f4e-4cc0-a98c-d7c974caacee
-tag: AI
+tag: Tools
 
 A new open-source retrieval-augmented generation library achieves 97% storage reduction compared to conventional vector databases while keeping all data fully on-premise.
 
@@ -1515,7 +1515,7 @@ Researchers from Harvard and MIT deployed live autonomous agents in real environ
 source: AlphaSignal
 date: 2026-05-19
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=85d8202dc42cb2&lid=RBgyD9O7JT9rKHQj&mid=9d9372-be4e-483d-80ae-4ac7a4e6b5ad
-tag: Agents
+tag: Tools
 
 Claude agents can now execute tools inside your own infrastructure (or managed providers like Cloudflare, Vercel, Modal, or Daytona) so files never leave your network, while the orchestration loop stays on Anthropic's side.
 
@@ -1523,7 +1523,7 @@ Claude agents can now execute tools inside your own infrastructure (or managed p
 source: AlphaSignal
 date: 2026-05-19
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=85d8202dc42cb2&lid=1xSvy7JVWyAnH3iDC&mid=9d9372-be4e-483d-80ae-4ac7a4e6b5ad
-tag: AI
+tag: Tools
 
 Microsoft's TRELLIS.2 is a 4B open-source model that converts any image into a 3D asset in 3 seconds using a new internal "O-Voxel" format that stores shape and surface material together, avoiding the messy results of prior tools on complex shapes like glass or clothing.
 
@@ -1547,7 +1547,7 @@ Hallmark is an open-source rule file that teaches Claude Code, Cursor, and Codex
 source: AlphaSignal
 date: 2026-05-20
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=85d8202dc42cb2&lid=VSmx9kU2KJRUFevP&mid=9d9372-be4e-483d-80ae-4ac7a4e6b5ad
-tag: Hardware
+tag: Tools
 
 A new open-source CUDA kernel accelerates ColBERT late-interaction retrieval 3–5x by using tiled GPU scoring, making dense retrieval pipelines dramatically faster without changing model architecture or results quality.
 
@@ -1579,7 +1579,7 @@ Antigravity 2.0 is a completely rebuilt desktop app (not an update) that runs mu
 source: AlphaSignal
 date: 2026-05-21
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=ba53fe6b50c47f&lid=1CWePXGhe4bLnzbU&mid=aeea51-3f4e-4cc0-a98c-d7c974caacee
-tag: Agents
+tag: Tools
 
 A Spec-Driven Development framework with 95,000+ GitHub stars forces AI coding agents to fully clarify requirements, plan the tech stack and architecture, and break work into ordered steps before writing a single line of code.
 
@@ -1603,7 +1603,7 @@ Google AI Studio is launching as a standalone mobile app, letting users speak or
 source: AlphaSignal
 date: 2026-05-22
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=W446d1a159c65f7&lid=ZaMpeTBERR0KG5GM&mid=222d78-2b56-41ab-8200-100a6b6a5722
-tag: Agents
+tag: Tools
 
 A single API call now spins up a fully managed AI agent on Google's infrastructure with a built-in isolated Linux environment.
 
@@ -1658,7 +1658,7 @@ DeepMind's AlphaProof model independently solved 9 open Erdős combinatorics and
 source: AlphaSignal
 date: 2026-05-26
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=89306b86dc5718&lid=kjk3RqbJtllNq3bC&mid=3363bd-c5ab-45c5-9b53-c215b2550a73
-tag: Agents
+tag: Tools
 
 Grok Build is a terminal-based coding agent that reads your project, makes a plan, edits files, and runs commands — with a "plan mode" that shows the full action plan before anything is touched.
 
@@ -1666,7 +1666,7 @@ Grok Build is a terminal-based coding agent that reads your project, makes a pla
 source: AlphaSignal
 date: 2026-05-26
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=89306b86dc5718&lid=xBgt0oA3RW3E7P7E&mid=3363bd-c5ab-45c5-9b53-c215b2550a73
-tag: Leadership
+tag: Tools
 
 Perplexity open-sourced the supply chain security tool it uses internally, which scans browser extensions across Chrome/Edge/Brave/Arc/Firefox, editor plugins in VS Code, MCP config files (which tell AI assistants which services they can access), and vulnerable packages across npm, PyPI, and Go — all without executing package managers or triggering malicious code.
 
@@ -1778,7 +1778,7 @@ Anthropic raised $65B at a near-trillion-dollar valuation, making it the most va
 source: AlphaSignal
 date: 2026-05-29
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=Uae6b06c000108f&lid=1quw6dbAsp5zA1Zyo&mid=65f85f-222b-4116-b906-cd4c1158c996
-tag: AI
+tag: Tools
 
 A new open-source Claude skill turns any HTML page into a live commenting surface similar to Google Docs: highlight text or click an element, drop a note, and Claude edits the page on the spot.
 
@@ -1786,7 +1786,7 @@ A new open-source Claude skill turns any HTML page into a live commenting surfac
 source: AlphaSignal
 date: 2026-05-29
 url: https://app.alphasignal.ai/c?uid=soN6c7dzS9qTMRWs&cid=Uae6b06c000108f&lid=4T56KLsqcKbHeFmC&mid=65f85f-222b-4116-b906-cd4c1158c996
-tag: AI
+tag: Tools
 
 Parse is an open-source file conversion utility that ingests any file format — PDFs, spreadsheets, images, Office documents, audio — and outputs clean, structured, LLM-ready text or JSON.
 
