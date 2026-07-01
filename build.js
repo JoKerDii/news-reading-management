@@ -22,7 +22,7 @@ const ROOT = __dirname;
 const SRC_DIR = path.join(ROOT, "newsletter-sources");
 const TEMPLATE = path.join(ROOT, "template.html");
 const OUT = path.join(ROOT, "index.html");
-const MAX_ARTICLES = 50;
+const MAX_ARTICLES = 1000;
 
 // slug -> presentation. `order` controls section order on the page.
 const SECTION_META = {
@@ -40,20 +40,60 @@ const SECTION_META = {
 const DEFAULT_PALETTE = ["#2b7de9","#8a4fff","#f5a623","#ff7a59","#e5484d","#2bb673","#0ea5e9","#16a085","#ff6b6b","#6366f1"];
 
 function parseMarkdown(md){
+  const raw = md.replace(/\r\n/g, "\n");
   const articles = [];
-  const blocks = md.split(/^##\s+/m).slice(1);
-  for (const block of blocks){
-    const lines = block.split("\n");
-    const title = lines.shift().trim();
-    const art = { title, source:"", date:"", url:"", tag:"", summary:"" };
-    let i = 0;
-    for (; i < lines.length; i++){
-      const m = lines[i].match(/^(source|date|url|tag):\s*(.*)$/i);
-      if (m){ art[m[1].toLowerCase()] = m[2].trim(); }
-      else if (lines[i].trim() === "" && i === 0){ continue; }
-      else { break; }
+
+  const oldBlocks = raw.split(/^##\s+/m).slice(1);
+  if (oldBlocks.length && /(^|\n)(source|date|url|tag):\s*/i.test(raw)){
+    for (const block of oldBlocks){
+      const lines = block.split("\n");
+      const title = lines.shift().trim();
+      const art = { title, source:"", date:"", url:"", tag:"", summary:"" };
+      let i = 0;
+      for (; i < lines.length; i++){
+        const m = lines[i].match(/^(source|date|url|tag):\s*(.*)$/i);
+        if (m){ art[m[1].toLowerCase()] = m[2].trim(); }
+        else if (lines[i].trim() === "" && i === 0){ continue; }
+        else { break; }
+      }
+      art.summary = lines.slice(i).join("\n").trim();
+      if (art.title) articles.push(art);
     }
-    art.summary = lines.slice(i).join("\n").trim();
+    return articles.slice(0, MAX_ARTICLES);
+  }
+
+  const sectionTitle = (raw.match(/^#\s+(.+)$/m) || ["", ""])[1].trim();
+  const blocks = raw.split(/^###\s+\d+\.\s+/m).slice(1);
+  for (const block of blocks){
+    const lines = block.split("\n").map(l => l.trimEnd());
+    const first = lines[0] || "";
+    const titleMatch = first.match(/^\[(.+?)\]\((https?:\/\/[^)\s]+)\)/);
+    const title = titleMatch ? titleMatch[1].trim() : first.replace(/\s+/g, " ").trim();
+    const url = titleMatch ? titleMatch[2].trim() : "";
+    const art = { title, source:"", date:"", url, tag:"", summary:"" };
+
+    const publishedLine = lines.find(l => /^\*\*Published:\*\*/i.test(l));
+    if (publishedLine){
+      const publishedMatch = publishedLine.match(/\*\*Published:\*\*\s*(.+?)(?:\s*\|\s*\*\*By:\*\*\s*(.+))?$/i);
+      if (publishedMatch){
+        art.date = publishedMatch[1].trim();
+        if (publishedMatch[2]) art.source = publishedMatch[2].trim();
+      }
+    }
+
+    const byLine = lines.find(l => /^\*\*By:\*\*/i.test(l));
+    if (!art.source && byLine) art.source = byLine.replace(/^\*\*By:\*\*/i, "").trim();
+    if (!art.source) art.source = sectionTitle;
+
+    const summaryIndex = lines.findIndex(l => /^\*\*Summary:\*\*/i.test(l));
+    if (summaryIndex >= 0){
+      const summaryText = lines[summaryIndex].replace(/^\*\*Summary:\*\*\s*/i, "").trim();
+      art.summary = summaryText || lines.slice(summaryIndex + 1).join("\n").trim();
+    }
+    else {
+      art.summary = lines.slice(1).join("\n").trim();
+    }
+
     if (art.title) articles.push(art);
   }
   return articles.slice(0, MAX_ARTICLES);
@@ -69,7 +109,7 @@ function titleFromMarkdown(md, slug){
 }
 function monthLabel(value){ // "2026-05" -> "May 2026"
   const [y,m] = value.split("-").map(Number);
-  return new Date(y, m-1, 1).toLocaleString("en-US",{month:"long",year:"numeric"});
+  return new Date(y, m-1, 1).toLocaleString("en-US",{month:"short",year:"numeric"});
 }
 
 // ---- scan months ----
