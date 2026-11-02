@@ -34,17 +34,18 @@ def parse_markdown(md: str):
     if old_blocks and re.search(r"(^|\n)(source|date|url|tag):\s*", raw, flags=re.I):
         for block in old_blocks:
             lines = block.split("\n")
-            title = lines[0].strip() if lines else ""
+            title = lines.pop(0).strip() if lines else ""
             art = {"title": title, "source": "", "date": "", "url": "", "tag": "", "summary": ""}
             i = 0
-            for i in range(len(lines)):
+            while i < len(lines):
                 m = re.match(r"^(source|date|url|tag):\s*(.*)$", lines[i], flags=re.I)
                 if m:
                     art[m.group(1).lower()] = m.group(2).strip()
                 elif lines[i].strip() == "" and i == 0:
-                    continue
+                    pass
                 else:
                     break
+                i += 1
             art["summary"] = "\n".join(lines[i:]).strip()
             if art["title"]:
                 articles.append(art)
