@@ -16,6 +16,7 @@ SECTION_META = {
     "email-newsletters-2": {"title": "Product, Fintech & Crypto", "icon": "🧩", "color": "#8a4fff", "sub": "Product, fintech & crypto newsletters", "order": 2},
     "founder-newsletters": {"title": "Founder Newsletters", "icon": "🚀", "color": "#f5a623", "sub": "Founder & startup reads", "order": 3},
     "substack-selections": {"title": "Substack Selections", "icon": "✍️", "color": "#ff7a59", "sub": "Curated Substack essays", "order": 4},
+    "substack-save": {"title": "Substack Saved", "icon": "🔖", "color": "#6366f1", "sub": "Saved posts from substack.com/saved", "order": 4.5},
     "harvard-business-review": {"title": "Harvard Business Review", "icon": "🎓", "color": "#e5484d", "sub": "HBR articles + monthly picks", "order": 5},
     "social-media": {"title": "Social Media", "icon": "👥", "color": "#2bb673", "sub": "X · LinkedIn · Substack", "order": 6},
     "consulting-reports": {"title": "Consulting Reports", "icon": "📊", "color": "#0ea5e9", "sub": "McKinsey · Bain · PwC & more", "order": 7},
@@ -26,7 +27,7 @@ SECTION_META = {
 DEFAULT_PALETTE = ["#2b7de9", "#8a4fff", "#f5a623", "#ff7a59", "#e5484d", "#2bb673", "#0ea5e9", "#16a085", "#ff6b6b", "#6366f1"]
 
 
-def parse_markdown(md: str):
+def parse_entries(md: str):
     raw = md.replace("\r\n", "\n")
     articles = []
 
@@ -88,6 +89,81 @@ def parse_markdown(md: str):
 
         if art["title"]:
             articles.append(art)
+    return articles[:MAX_ARTICLES]
+
+
+
+MONTHS_ABBR = {m: i for i, m in enumerate(
+    "jan feb mar apr may jun jul aug sep oct nov dec".split(), 1)}
+
+
+def _iso_date(text: str):
+    """'Oct 24, 2026, 9:02 AM ET' -> '2026-10-24'; passes through ISO dates."""
+    text = (text or "").strip()
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})", text)
+    if m:
+        return m.group(0)
+    m = re.search(r"([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2}),?\s+(\d{4})", text)
+    if m and m.group(1).lower() in MONTHS_ABBR:
+        return "%s-%02d-%02d" % (m.group(3), MONTHS_ABBR[m.group(1).lower()], int(m.group(2)))
+    return text
+
+
+def _cell_link(text: str):
+    m = re.search(r"\[([^\]]*)\]\((https?://[^)\s]+)\)", text or "")
+    if m:
+        return m.group(1).strip(), m.group(2).strip()
+    m = re.search(r"https?://\S+", text or "")
+    return (text or "").strip(), (m.group(0).strip() if m else "")
+
+
+def parse_table(md: str):
+    """Fallback for files written as a markdown table with Title + URL columns."""
+    lines = md.replace("\r\n", "\n").split("\n")
+    for i in range(len(lines) - 1):
+        row, sep = lines[i].strip(), lines[i + 1].strip()
+        if not row.startswith("|") or not re.match(r"^\|[\s:|-]+\|$", sep):
+            continue
+        headers = [c.strip().lower() for c in row.strip("|").split("|")]
+        idx = {}
+        for j, h in enumerate(headers):
+            for key, words in (("title", ("title", "post")), ("source", ("author", "source", "publication")),
+                               ("date", ("posted", "date", "published")), ("url", ("url", "link")),
+                               ("tag", ("likes", "tag")), ("summary", ("summary", "note", "description"))):
+                if key not in idx and any(w in h for w in words):
+                    idx[key] = j
+                    break
+        if "title" not in idx or "url" not in idx:
+            continue
+        articles = []
+        for raw_row in lines[i + 2:]:
+            r = raw_row.strip()
+            if not r.startswith("|"):
+                break
+            cells = [c.strip() for c in r.strip("|").split("|")]
+            get = lambda k: cells[idx[k]] if k in idx and idx[k] < len(cells) else ""
+            title, title_url = _cell_link(get("title"))
+            _, url = _cell_link(get("url"))
+            if not title:
+                continue
+            likes = get("tag")
+            articles.append({
+                "title": title,
+                "source": get("source"),
+                "date": _iso_date(get("date")),
+                "url": url or title_url,
+                "tag": (likes + " likes") if re.match(r"^[\d,]+$", likes or "") else likes,
+                "summary": get("summary"),
+            })
+        if articles:
+            return articles
+    return []
+
+
+def parse_markdown(md: str):
+    articles = parse_entries(md)
+    if not articles:
+        articles = parse_table(md)
     return articles[:MAX_ARTICLES]
 
 
