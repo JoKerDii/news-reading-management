@@ -30,6 +30,7 @@ const SECTION_META = {
   "email-newsletters-2":     { title:"Product, Fintech & Crypto",    icon:"🧩", color:"#8a4fff", sub:"Product, fintech & crypto newsletters", order:2 },
   "founder-newsletters":     { title:"Founder Newsletters",          icon:"🚀", color:"#f5a623", sub:"Founder & startup reads", order:3 },
   "substack-selections":     { title:"Substack Selections",          icon:"✍️", color:"#ff7a59", sub:"Curated Substack essays", order:4 },
+  "substack-save":           { title:"Substack Saved",              icon:"🔖", color:"#6366f1", sub:"Saved posts from substack.com/saved", order:4.5 },
   "harvard-business-review": { title:"Harvard Business Review",       icon:"🎓", color:"#e5484d", sub:"HBR articles + monthly picks", order:5 },
   "social-media":            { title:"Social Media",                 icon:"👥", color:"#2bb673", sub:"X · LinkedIn · Substack", order:6 },
   "consulting-reports":      { title:"Consulting Reports",           icon:"📊", color:"#0ea5e9", sub:"McKinsey · Bain · PwC & more", order:7 },
@@ -39,7 +40,7 @@ const SECTION_META = {
 
 const DEFAULT_PALETTE = ["#2b7de9","#8a4fff","#f5a623","#ff7a59","#e5484d","#2bb673","#0ea5e9","#16a085","#ff6b6b","#6366f1"];
 
-function parseMarkdown(md){
+function parseEntries(md){
   const raw = md.replace(/\r\n/g, "\n");
   const articles = [];
 
@@ -96,6 +97,69 @@ function parseMarkdown(md){
 
     if (art.title) articles.push(art);
   }
+  return articles.slice(0, MAX_ARTICLES);
+}
+
+
+const MONTHS_ABBR = {jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
+
+function isoDate(text){                      // "Oct 24, 2026, 9:02 AM ET" -> "2026-10-24"
+  text = (text||"").trim();
+  let m = text.match(/(\d{4})-(\d{2})-(\d{2})/);
+  if (m) return m[0];
+  m = text.match(/([A-Za-z]{3})[a-z]*\.?\s+(\d{1,2}),?\s+(\d{4})/);
+  const mon = m && MONTHS_ABBR[m[1].toLowerCase()];
+  if (mon) return `${m[3]}-${String(mon).padStart(2,"0")}-${String(+m[2]).padStart(2,"0")}`;
+  return text;
+}
+
+function cellLink(text){
+  let m = (text||"").match(/\[([^\]]*)\]\((https?:\/\/[^)\s]+)\)/);
+  if (m) return [m[1].trim(), m[2].trim()];
+  m = (text||"").match(/https?:\/\/\S+/);
+  return [(text||"").trim(), m ? m[0].trim() : ""];
+}
+
+// Fallback for files written as a markdown table with Title + URL columns.
+function parseTable(md){
+  const lines = md.replace(/\r\n/g,"\n").split("\n");
+  for (let i = 0; i < lines.length - 1; i++){
+    const row = lines[i].trim(), sep = lines[i+1].trim();
+    if (!row.startsWith("|") || !/^\|[\s:|-]+\|$/.test(sep)) continue;
+    const headers = row.replace(/^\||\|$/g,"").split("|").map(c => c.trim().toLowerCase());
+    const idx = {};
+    const MAP = [["title",["title","post"]],["source",["author","source","publication"]],
+                 ["date",["posted","date","published"]],["url",["url","link"]],
+                 ["tag",["likes","tag"]],["summary",["summary","note","description"]]];
+    headers.forEach((h,j) => {
+      for (const [key, words] of MAP){
+        if (idx[key] === undefined && words.some(w => h.includes(w))){ idx[key] = j; break; }
+      }
+    });
+    if (idx.title === undefined || idx.url === undefined) continue;
+    const articles = [];
+    for (const rawRow of lines.slice(i+2)){
+      const r = rawRow.trim();
+      if (!r.startsWith("|")) break;
+      const cells = r.replace(/^\||\|$/g,"").split("|").map(c => c.trim());
+      const get = k => (idx[k] !== undefined && idx[k] < cells.length) ? cells[idx[k]] : "";
+      const [title, titleUrl] = cellLink(get("title"));
+      const [, url] = cellLink(get("url"));
+      if (!title) continue;
+      const likes = get("tag");
+      articles.push({ title, source:get("source"), date:isoDate(get("date")),
+                      url: url || titleUrl,
+                      tag: /^[\d,]+$/.test(likes||"") ? likes+" likes" : likes,
+                      summary:get("summary") });
+    }
+    if (articles.length) return articles;
+  }
+  return [];
+}
+
+function parseMarkdown(md){
+  let articles = parseEntries(md);
+  if (!articles.length) articles = parseTable(md);
   return articles.slice(0, MAX_ARTICLES);
 }
 
